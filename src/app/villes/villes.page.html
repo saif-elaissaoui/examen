@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Villes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [scrollEvents]="true">
+<ion-list *ngFor="let ville of villes">
+
+  <ion-item>
+    <h2>{{ ville.ville }}</h2>
+	  <ion-button  color="danger" (click)="anassfiltrer( ville.ville )">Liste des monuments </ion-button>
+  </ion-item>
+
+
+	    
+
+	
+
+
+</ion-list>
+</ion-content>
